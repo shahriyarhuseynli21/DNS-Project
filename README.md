@@ -1,0 +1,1 @@
+To run this project firstly download project and write python app.py .It will work on http://127.0.0.1:5000 

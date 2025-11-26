@@ -1,0 +1,83 @@
+body {
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.card, .form-control, .form-select, .list-group-item {
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+
+.list-group-item {
+    position: relative;
+    padding-left: 2.5rem;
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #f1f3f5;
+    transform: scale(1.01);
+}
+
+.list-group-item::before {
+    content: "📋";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+body.bg-dark {
+    background-color: #212529 !important;
+    color: #f8f9fa;
+}
+
+body.bg-dark .card,
+body.bg-dark .form-control,
+body.bg-dark .form-select,
+body.bg-dark .list-group-item {
+    background-color: #343a40;
+    border-color: #495057;
+    color: #f8f9fa;
+}
+
+body.bg-dark .form-control::placeholder {
+    color: #adb5bd;
+}
+
+body.bg-dark .list-group-item:hover {
+    background-color: #495057;
+}
+
+
+button[type="submit"] {
+    background: linear-gradient(45deg, #0d6efd, #6610f2);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+
+.alert-secondary {
+    background-color: #f8f9fa;
+    border-color: #e9ecef;
+}
+
+body.bg-dark .alert-secondary {
+    background-color: #343a40;
+    border-color: #495057;
+    color: #f8f9fa;
+}
